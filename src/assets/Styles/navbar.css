@@ -1,0 +1,99 @@
+nav {
+  width: 100%;
+  background-color: #fdfcf9;
+  border-bottom: 1px solid #e8e5df;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.navbarInner {
+  max-width: 1350px;
+  height: 80px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 32px;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #1d1d1b;
+  text-decoration: none;
+}
+
+.logoIcon {
+  color: #999b93;
+}
+
+.logoText {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Navigation links */
+
+.navbarLinks {
+  display: flex;
+  gap: 32px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarLinks a {
+  color: #6b6b67;
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  transition: color 0.2s ease;
+}
+
+.navbarLinks a:hover {
+  color: #1d1d1b;
+}
+
+/* Active route */
+
+.navbarLinks a.active {
+  color: #151514;
+}
+
+/* Appointment button */
+
+.bookingButton {
+  padding: 12px 24px;
+
+  border: 1px solid #cfcac4;
+
+  color: #6b6b67;
+  background-color: transparent;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  transition: all 0.2s ease;
+}
+
+.bookingButton:hover {
+  color: #1d1d1b;
+  border-color: #b8b2aa;
+  background-color: #ffffff;
+}
