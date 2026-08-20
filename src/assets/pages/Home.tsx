@@ -3,6 +3,8 @@ import HeroImage from "../images/HeroImage.png"
 import WomensHairdresserImage from "../images/WomensHairdresserImage.jpg"
 import BarberImage from "../images/BarberImage.jpg"
 import FootCareImage from "../images/FootCareImage.jpg"
+import MaleImage from "../images/MaleImage.jpg"
+import FemaleImage from "../images/FemaleImage.jpg"
 import "../Styles/home.css"
 
 export default function Home() {
@@ -162,37 +164,37 @@ export default function Home() {
         <div className="team-grid">
 
           <div className="team-member">
-            <img src="/images/anna.jpg" alt="Anna" />
+            <img src={FemaleImage} alt="Anna" />
             <h3>ANNA</h3>
             <p>Senior Stylist</p>
           </div>
 
           <div className="team-member">
-            <img src="/images/viktoria.jpg" alt="Viktória" />
+            <img src={FemaleImage} alt="Viktória" />
             <h3>VIKTÓRIA</h3>
             <p>Stylist</p>
           </div>
 
           <div className="team-member">
-            <img src="/images/dora.jpg" alt="Dóra" />
+            <img src={FemaleImage} alt="Dóra" />
             <h3>DÓRA</h3>
             <p>Color Specialist</p>
           </div>
 
           <div className="team-member">
-            <img src="/images/mark.jpg" alt="Márk" />
+            <img src={MaleImage} alt="Márk" />
             <h3>MÁRK</h3>
             <p>Barber</p>
           </div>
 
           <div className="team-member">
-            <img src="/images/balazs.jpg" alt="Balázs" />
+            <img src={MaleImage} alt="Balázs" />
             <h3>BALÁZS</h3>
             <p>Barber</p>
           </div>
 
           <div className="team-member">
-            <img src="/images/kinga.jpg" alt="Kinga" />
+            <img src={FemaleImage} alt="Kinga" />
             <h3>KINGA</h3>
             <p>Lábápoló</p>
           </div>
