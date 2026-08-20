@@ -122,7 +122,7 @@ export default function Home() {
 
         <div className="about-image">
           <img
-            src="/images/salon.jpg"
+            src={HeroImage}
             alt="White Bloom szalon belső tere"
           />
         </div>
