@@ -1,6 +1,4 @@
-/* ========================================
-   GLOBAL HOME STYLES
-======================================== */
+
 
 .home {
   width: 100%;
@@ -13,7 +11,7 @@
   width: 100%;
 }
 
-.section-title {
+.sectionTitle {
   margin: 0 0 35px;
 
   text-align: center;
@@ -24,7 +22,7 @@
   letter-spacing: 1px;
 }
 
-.home-button {
+.homeButton {
   display: inline-flex;
   align-items: center;
   gap: 18px;
@@ -44,20 +42,15 @@
   transition: all 0.2s ease;
 }
 
-.home-button span {
+.homeButton span {
   font-size: 17px;
   line-height: 1;
 }
 
-.home-button:hover {
+.homeButton:hover {
   background-color: #756b63;
   color: white;
 }
-
-
-/* ========================================
-   HERO
-======================================== */
 
 .hero {
   display: grid;
@@ -68,7 +61,7 @@
   background-color: #f2ebe3;
 }
 
-.hero-content {
+.heroContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +69,7 @@
   padding: 60px 10%;
 }
 
-.hero-content h1 {
+.heroContent h1 {
   margin: 0;
 
   font-family: Georgia, "Times New Roman", serif;
@@ -86,7 +79,7 @@
   letter-spacing: 2px;
 }
 
-.hero-content h2 {
+.heroContent h2 {
   margin: 22px 0 18px;
 
   font-family: Georgia, "Times New Roman", serif;
@@ -95,7 +88,7 @@
   letter-spacing: 0.5px;
 }
 
-.hero-content p {
+.heroContent p {
   margin: 0 0 28px;
 
   color: #6f6862;
@@ -104,27 +97,22 @@
   line-height: 1.7;
 }
 
-.hero-image {
+.heroImage {
   min-height: 420px;
   overflow: hidden;
 }
 
-.hero-image img {
+.heroImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-
-/* ========================================
-   SERVICES
-======================================== */
-
 .services {
   padding: 45px 7% 55px;
 }
 
-.service-grid {
+.serviceGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -133,7 +121,7 @@
   margin: 0 auto;
 }
 
-.service-card {
+.serviceCard {
   overflow: hidden;
 
   border: 1px solid #ddd7d0;
@@ -142,22 +130,22 @@
   transition: transform 0.2s ease;
 }
 
-.service-card:hover {
+.serviceCard:hover {
   transform: translateY(-3px);
 }
 
-.service-card > img {
+.serviceCard > img {
   height: 180px;
   object-fit: cover;
 }
 
-.service-content {
+.serviceContent {
   padding: 22px 20px 25px;
 
   text-align: center;
 }
 
-.service-content h3 {
+.serviceContent h3 {
   margin: 0 0 10px;
 
   font-family: Georgia, "Times New Roman", serif;
@@ -165,7 +153,7 @@
   font-weight: 400;
 }
 
-.service-content p {
+.serviceContent p {
   min-height: 42px;
   margin: 0 0 18px;
 
@@ -175,7 +163,7 @@
   line-height: 1.6;
 }
 
-.small-button {
+.smallButton {
   display: inline-block;
 
   padding: 8px 18px;
@@ -192,15 +180,10 @@
   transition: all 0.2s ease;
 }
 
-.small-button:hover {
+.smallButton:hover {
   background-color: #756b63;
   color: white;
 }
-
-
-/* ========================================
-   ABOUT
-======================================== */
 
 .about {
   display: grid;
@@ -209,17 +192,17 @@
   background-color: #f3eee8;
 }
 
-.about-image {
+.aboutImage {
   min-height: 350px;
 }
 
-.about-image img {
+.aboutImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.about-content {
+.aboutContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,7 +220,7 @@
   letter-spacing: 1px;
 }
 
-.about-content h2 {
+.aboutContent h2 {
   margin: 0 0 20px;
 
   font-family: Georgia, "Times New Roman", serif;
@@ -246,7 +229,7 @@
   line-height: 1.15;
 }
 
-.about-content p {
+.aboutContent p {
   max-width: 450px;
   margin: 0 0 25px;
 
@@ -256,18 +239,13 @@
   line-height: 1.7;
 }
 
-
-/* ========================================
-   TEAM
-======================================== */
-
 .team {
   padding: 45px 5% 50px;
 
   text-align: center;
 }
 
-.team-grid {
+.teamGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 25px;
@@ -276,7 +254,7 @@
   margin: 0 auto 30px;
 }
 
-.team-member img {
+.teamMember img {
   width: 100px;
   height: 100px;
 
@@ -287,7 +265,7 @@
   object-fit: cover;
 }
 
-.team-member h3 {
+.teamMember h3 {
   margin: 0 0 4px;
 
   font-family: Georgia, "Times New Roman", serif;
@@ -295,7 +273,7 @@
   font-weight: 400;
 }
 
-.team-member p {
+.teamMember p {
   margin: 0;
 
   color: #888078;
@@ -303,10 +281,6 @@
   font-size: 9px;
 }
 
-
-/* ========================================
-   BOOKING
-======================================== */
 
 .booking {
   min-height: 180px;
@@ -316,7 +290,7 @@
   background-size: cover;
 }
 
-.booking-overlay {
+.bookingOverlay {
   min-height: 180px;
 
   display: flex;
@@ -343,7 +317,7 @@
   letter-spacing: 1px;
 }
 
-.booking-button-home {
+.bookingButtonHome {
   display: inline-flex;
   align-items: center;
   gap: 15px;
@@ -362,19 +336,15 @@
   transition: all 0.2s ease;
 }
 
-.booking-button span {
+.bookingButton span {
   font-size: 17px;
 }
 
-.booking-button:hover {
+.bookingButton:hover {
   background-color: white;
   color: #756b63;
 }
 
-
-/* ========================================
-   RESPONSIVE
-======================================== */
 
 @media (max-width: 900px) {
 
@@ -382,15 +352,15 @@
     grid-template-columns: 1fr;
   }
 
-  .hero-content {
+  .heroContent {
     padding: 55px 8%;
   }
 
-  .hero-image {
+  .heroImage {
     min-height: 350px;
   }
 
-  .service-grid {
+  .serviceGrid {
     grid-template-columns: 1fr;
     max-width: 450px;
   }
@@ -399,11 +369,11 @@
     grid-template-columns: 1fr;
   }
 
-  .about-image {
+  .aboutImage {
     min-height: 300px;
   }
 
-  .team-grid {
+  .teamGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -415,15 +385,15 @@
     padding: 40px 6%;
   }
 
-  .section-title {
+  .sectionTitle {
     font-size: 23px;
   }
 
-  .team-grid {
+  .teamGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-content h1 {
+  .heroContent h1 {
     font-size: 55px;
   }
 

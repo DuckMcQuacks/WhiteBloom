@@ -11,10 +11,8 @@ export default function Home() {
   return (
     <main className="home">
 
-      {/* ================= HERO ================= */}
-
       <section className="hero">
-        <div className="hero-content">
+        <div className="heroContent">
           <h1>
             WHITE
             <br />
@@ -31,13 +29,13 @@ export default function Home() {
             és törődés a legszebb önmagadért.
           </p>
 
-          <NavLink to="/idopontfoglalas" className="home-button">
+          <NavLink to="/idopontfoglalas" className="homeButton">
             IDŐPONTFOGLALÁS
             <span>→</span>
           </NavLink>
         </div>
 
-        <div className="hero-image">
+        <div className="heroImage">
           <img
             src={HeroImage}
           />
@@ -45,20 +43,18 @@ export default function Home() {
       </section>
 
 
-      {/* ================= SERVICES ================= */}
-
       <section className="services">
-        <h2 className="section-title">SZOLGÁLTATÁSAINK</h2>
+        <h2 className="sectionTitle">SZOLGÁLTATÁSAINK</h2>
 
-        <div className="service-grid">
+        <div className="serviceGrid">
 
-          <article className="service-card">
+          <article className="serviceCard">
             <img
               src={WomensHairdresserImage}
               alt="Női fodrászat"
             />
 
-            <div className="service-content">
+            <div className="serviceContent">
               <h3>NŐI FODRÁSZAT</h3>
 
               <p>
@@ -66,20 +62,20 @@ export default function Home() {
                 szépségét!
               </p>
 
-              <NavLink to="/noi-fodraszat" className="small-button">
+              <NavLink to="/noi-fodraszat" className="smallButton">
                 TOVÁBB
               </NavLink>
             </div>
           </article>
 
 
-          <article className="service-card">
+          <article className="serviceCard">
             <img
               src={BarberImage}
               alt="Barber szolgáltatás"
             />
 
-            <div className="service-content">
+            <div className="serviceContent">
               <h3>BARBER SZOLGÁLTATÁS</h3>
 
               <p>
@@ -87,20 +83,20 @@ export default function Home() {
                 Modern stílus uraknak.
               </p>
 
-              <NavLink to="/barber" className="small-button">
+              <NavLink to="/barber" className="smallButton">
                 TOVÁBB
               </NavLink>
             </div>
           </article>
 
 
-          <article className="service-card">
+          <article className="serviceCard">
             <img
               src={FootCareImage}
               alt="Lábápolás"
             />
 
-            <div className="service-content">
+            <div className="serviceContent">
               <h3>LÁBÁPOLÁS</h3>
 
               <p>
@@ -108,7 +104,7 @@ export default function Home() {
                 Lépjen a könnyedségbe!
               </p>
 
-              <NavLink to="/labapolas" className="small-button">
+              <NavLink to="/labapolas" className="smallButton">
                 TOVÁBB
               </NavLink>
             </div>
@@ -117,19 +113,16 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* ================= ABOUT ================= */}
-
       <section className="about">
 
-        <div className="about-image">
+        <div className="aboutImage">
           <img
             src={HeroImage}
             alt="White Bloom szalon belső tere"
           />
         </div>
 
-        <div className="about-content">
+        <div className="aboutContent">
           <span className="eyebrow">RÓLUNK</span>
 
           <h2>
@@ -146,7 +139,7 @@ export default function Home() {
             figyelemmel várják Önt.
           </p>
 
-          <NavLink to="/rolunk" className="home-button">
+          <NavLink to="/rolunk" className="homeButton">
             TÖBBET SZERETNÉK TUDNI
             <span>→</span>
           </NavLink>
@@ -155,45 +148,43 @@ export default function Home() {
       </section>
 
 
-      {/* ================= TEAM ================= */}
-
       <section className="team">
 
-        <h2 className="section-title">SZAKEMBEREINK</h2>
+        <h2 className="sectionTitle">SZAKEMBEREINK</h2>
 
-        <div className="team-grid">
+        <div className="teamGrid">
 
-          <div className="team-member">
+          <div className="teamMember">
             <img src={FemaleImage} alt="Anna" />
             <h3>ANNA</h3>
             <p>Senior Stylist</p>
           </div>
 
-          <div className="team-member">
+          <div className="teamMember">
             <img src={FemaleImage} alt="Viktória" />
             <h3>VIKTÓRIA</h3>
             <p>Stylist</p>
           </div>
 
-          <div className="team-member">
+          <div className="teamMember">
             <img src={FemaleImage} alt="Dóra" />
             <h3>DÓRA</h3>
             <p>Color Specialist</p>
           </div>
 
-          <div className="team-member">
+          <div className="teamMember">
             <img src={MaleImage} alt="Márk" />
             <h3>MÁRK</h3>
             <p>Barber</p>
           </div>
 
-          <div className="team-member">
+          <div className="teamMember">
             <img src={MaleImage} alt="Balázs" />
             <h3>BALÁZS</h3>
             <p>Barber</p>
           </div>
 
-          <div className="team-member">
+          <div className="teamMember">
             <img src={FemaleImage} alt="Kinga" />
             <h3>KINGA</h3>
             <p>Lábápoló</p>
@@ -201,25 +192,22 @@ export default function Home() {
 
         </div>
 
-        <NavLink to="/szakembereink" className="home-button">
+        <NavLink to="/szakembereink" className="homeButton">
           ÖSSZES SZAKEMBER MEGTEKINTÉSE
           <span>→</span>
         </NavLink>
 
       </section>
 
-
-      {/* ================= BOOKING CTA ================= */}
-
       <section className="booking">
-        <div className="booking-overlay">
+        <div className="bookingOverlay">
           <h2>
             FOGLALJ IDŐPONTOT
             <br />
             ÉS ÉLD ÁT A WHITE BLOOM ÉLMÉNYT!
           </h2>
 
-          <NavLink to="/idopontfoglalas" className="booking-button-home">
+          <NavLink to="/idopontfoglalas" className="bookingButtonHome">
             IDŐPONTFOGLALÁS
             <span>→</span>
           </NavLink>
