@@ -58,7 +58,7 @@ export default function Home() {
               <h3>NŐI FODRÁSZAT</h3>
 
               <p>
-                Vágás, festés, stílus – Fedezze fel
+                Vágás, festés, stílus - Fedezze fel
                 szépségét!
               </p>
 
@@ -79,7 +79,7 @@ export default function Home() {
               <h3>BARBER SZOLGÁLTATÁS</h3>
 
               <p>
-                Hajvágás, borotválás, szakállápolás –
+                Hajvágás, borotválás, szakállápolás -
                 Modern stílus uraknak.
               </p>
 
@@ -100,7 +100,7 @@ export default function Home() {
               <h3>LÁBÁPOLÁS</h3>
 
               <p>
-                Pedikűr, kényeztető kezelések –
+                Pedikűr, kényeztető kezelések -
                 Lépjen a könnyedségbe!
               </p>
 

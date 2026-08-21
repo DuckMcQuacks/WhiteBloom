@@ -37,8 +37,8 @@ export default function Footer() {
         <div className="footerColumn">
           <h2>NYITVATARTÁS</h2>
           <dl className="openingHours">
-            <div><dt>Hétfő – Péntek</dt><dd>9:00 – 20:00</dd></div>
-            <div><dt>Szombat</dt><dd>9:00 – 16:00</dd></div>
+            <div><dt>Hétfő - Péntek</dt><dd>9:00 - 20:00</dd></div>
+            <div><dt>Szombat</dt><dd>9:00 - 16:00</dd></div>
             <div><dt>Vasárnap</dt><dd>Zárva</dd></div>
           </dl>
         </div>
