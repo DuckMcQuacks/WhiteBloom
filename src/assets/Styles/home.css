@@ -334,7 +334,7 @@
   transition: all 0.2s ease;
 }
 .bookingButtonHome:hover {
-  background-color: rgb(189, 179, 179);
+    background-color: white;
   color: #756b63;
 }
 
