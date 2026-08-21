@@ -7,6 +7,7 @@ import FootCare from "./assets/pages/FootCare"
 import About from "./assets/pages/About"
 import Contact from "./assets/pages/Contact"
 import Appointment from "./assets/pages/Appointment"
+import Professionals from "./assets/pages/Professionals"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/rolunk" element={<About />} />
           <Route path="/kapcsolat" element={<Contact />} />
           <Route path="/idopontfoglalas" element={<Appointment />} />
+          <Route path="/szakembereink" element={<Professionals />} />
         </Route>
       </Routes>
     </BrowserRouter>

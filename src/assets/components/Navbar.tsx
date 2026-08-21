@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
 import LotusSVG from "../images/svg/lotus.svg"
-import {useState, useEffect} from "react"
+import {useState, useEffect, useRef} from "react"
 import "../Styles/navbar.css"
 
 export default function Navbar() {
     const [width , setWidth] = useState(window.innerWidth)
     const [isActive, setActive] = useState(false)
+    const navbarRef = useRef<HTMLElement>(null)
   
     //Conditional rendering for cross-Device compatibility regarding phones
     useEffect(() => {
@@ -20,6 +21,25 @@ export default function Navbar() {
           window.removeEventListener("resize", cb);
         };
       }, []);
+
+      useEffect(() => {
+        if (!isActive) {
+          return
+        }
+
+        function handleOutsidePointer(event: PointerEvent) {
+          if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+            setActive(false)
+          }
+        }
+
+        document.addEventListener("pointerdown", handleOutsidePointer)
+
+        return () => {
+          document.removeEventListener("pointerdown", handleOutsidePointer)
+        }
+      }, [isActive]);
+
       //Dealing with the mobile version of navbar, hiding and showing the menu
       function clickHandler()
       {
@@ -27,7 +47,7 @@ export default function Navbar() {
       }
   return (
     <>
-    <nav>
+    <nav ref={navbarRef}>
       <div className="navbarInner">
         <NavLink to="/" className="logo">
           <span className="logoIcon">

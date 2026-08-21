@@ -1,0 +1,150 @@
+.siteFooter {
+  width: 100%;
+  color: #756b63;
+  background-color: #fdfcf9;
+  border-top: 1px solid #e8e5df;
+}
+
+.footerInner {
+  display: grid;
+  grid-template-columns: 1.25fr 1.35fr 1.15fr 1.25fr;
+  gap: 48px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 32px 18px;
+}
+
+.footerBrand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footerLogo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: #383532;
+  text-decoration: none;
+}
+
+.footerLogo img {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 4px;
+  opacity: 0.55;
+}
+
+.footerLogo span {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.footerBrand p {
+  margin: 3px 0 0;
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+
+.footerColumn h2 {
+  margin: 0 0 10px;
+  color: #8d837b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.footerColumn a,
+.footerColumn span,
+.openingHours dt,
+.openingHours dd {
+  color: #756b63;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.footerColumn a {
+  text-decoration: none;
+}
+
+.footerColumn a:hover {
+  color: #383532;
+}
+
+.footerColumn address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.footerSocials a {
+  color: #756b63;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+}
+.footerSocials img {
+    width: 20px;
+    height: 20px;
+}
+
+.openingHours {
+  margin: 0;
+}
+
+.openingHours div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 20px;
+}
+
+.openingHours dd {
+  margin: 0;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerBottom {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px 12px;
+  color: #aaa19a;
+  font-size: 8px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .footerInner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 32px;
+  }
+
+  .footerBrand {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerInner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 24px 20px;
+  }
+
+  .footerBottom {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
