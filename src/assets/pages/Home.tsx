@@ -5,6 +5,7 @@ import BarberImage from "../images/BarberImage.jpg"
 import FootCareImage from "../images/FootCareImage.jpg"
 import MaleImage from "../images/MaleImage.jpg"
 import FemaleImage from "../images/FemaleImage.jpg"
+import Services from "../components/Services"
 import "../Styles/home.css"
 
 export default function Home() {
@@ -48,67 +49,29 @@ export default function Home() {
 
         <div className="serviceGrid">
 
-          <article className="serviceCard">
-            <img
-              src={WomensHairdresserImage}
-              alt="Női fodrászat"
-            />
+          <Services
+            image={WomensHairdresserImage}
+            alt="Női fodrászat"
+            title="NŐI FODRÁSZAT"
+            description="Vágás, festés, stílus - Fedezze fel szépségét!"
+            to="/noi-fodraszat"
+          />
 
-            <div className="serviceContent">
-              <h3>NŐI FODRÁSZAT</h3>
+          <Services
+            image={BarberImage}
+            alt="Barber szolgáltatás"
+            title="BARBER SZOLGÁLTATÁS"
+            description="Hajvágás, borotválás, szakállápolás - Modern stílus uraknak."
+            to="/barber"
+          />
 
-              <p>
-                Vágás, festés, stílus - Fedezze fel
-                szépségét!
-              </p>
-
-              <NavLink to="/noi-fodraszat" className="smallButton">
-                TOVÁBB
-              </NavLink>
-            </div>
-          </article>
-
-
-          <article className="serviceCard">
-            <img
-              src={BarberImage}
-              alt="Barber szolgáltatás"
-            />
-
-            <div className="serviceContent">
-              <h3>BARBER SZOLGÁLTATÁS</h3>
-
-              <p>
-                Hajvágás, borotválás, szakállápolás -
-                Modern stílus uraknak.
-              </p>
-
-              <NavLink to="/barber" className="smallButton">
-                TOVÁBB
-              </NavLink>
-            </div>
-          </article>
-
-
-          <article className="serviceCard">
-            <img
-              src={FootCareImage}
-              alt="Lábápolás"
-            />
-
-            <div className="serviceContent">
-              <h3>LÁBÁPOLÁS</h3>
-
-              <p>
-                Pedikűr, kényeztető kezelések -
-                Lépjen a könnyedségbe!
-              </p>
-
-              <NavLink to="/labapolas" className="smallButton">
-                TOVÁBB
-              </NavLink>
-            </div>
-          </article>
+          <Services
+            image={FootCareImage}
+            alt="Lábápolás"
+            title="LÁBÁPOLÁS"
+            description="Pedikűr, kényeztető kezelések - Lépjen a könnyedségbe!"
+            to="/labapolas"
+          />
 
         </div>
       </section>
