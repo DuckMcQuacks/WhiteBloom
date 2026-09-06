@@ -1,0 +1,41 @@
+[
+    {
+        "id" : 1,
+        "name": "Jane Doe",
+        "title": "Senior Stylist",
+        "instagram": "https://www.instagram.com/janedoe",
+        "facebook": "https://www.facebook.com/janedoe",
+        "email": "janedoe@example.com",
+        "phoneNumber": "+1 (555) 123-4567",
+        "description": "Very highly skilled blablabla.",
+        "specialties": ["Haircut", "Coloring", "Styling"],
+        "group": "Hairdresser"
+
+    },
+    {
+        "id" : 2,
+        "name": "John Smith",
+        "title": "Barber",
+        "instagram": "https://www.instagram.com/johnsmith",
+        "facebook": "https://www.facebook.com/johnsmith",
+        "email": "johnsmith@example.com",
+        "phoneNumber": "+1 (555) 123-4567",
+        "description": "Very highly skilled blablabla.",
+        "specialties": ["Haircut", "Coloring", "Styling"],
+        "group": "Barber"
+
+    },
+    {
+        "id" : 3,
+        "name": "Jane Doe2",
+        "title": "FootCare Specialist",
+        "instagram": "https://www.instagram.com/janedoe",
+        "facebook": "https://www.facebook.com/janedoe",
+        "email": "janedoe@example.com",
+        "phoneNumber": "+1 (555) 123-4567",
+        "description": "Very highly skilled blablabla.",
+        "specialties": ["Haircut", "Coloring", "Styling"],
+        "group": "FootCare"
+
+    }
+]

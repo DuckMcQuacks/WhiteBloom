@@ -3,10 +3,16 @@ import HeroImage from "../images/HeroImage.png"
 import WomensHairdresserImage from "../images/WomensHairdresserImage.jpg"
 import BarberImage from "../images/BarberImage.jpg"
 import FootCareImage from "../images/FootCareImage.jpg"
-import MaleImage from "../images/MaleImage.jpg"
-import FemaleImage from "../images/FemaleImage.jpg"
 import Services from "../components/Services"
+import SpecialistsCard from "../components/SpecialistsCard"
+import professionals from "../dataFiles/professionals.json"
 import "../Styles/home.css"
+
+const specialistList = professionals.map((person: any) => ({
+  id: person.id,
+  name: person.name,
+  title: person.Title ?? person.title ?? "Professional",
+}));
 
 export default function Home() {
   return (
@@ -116,43 +122,14 @@ export default function Home() {
         <h2 className="sectionTitle">SZAKEMBEREINK</h2>
 
         <div className="teamGrid">
-
-          <div className="teamMember">
-            <img src={FemaleImage} alt="Anna" />
-            <h3>ANNA</h3>
-            <p>Senior Stylist</p>
-          </div>
-
-          <div className="teamMember">
-            <img src={FemaleImage} alt="Viktória" />
-            <h3>VIKTÓRIA</h3>
-            <p>Stylist</p>
-          </div>
-
-          <div className="teamMember">
-            <img src={FemaleImage} alt="Dóra" />
-            <h3>DÓRA</h3>
-            <p>Color Specialist</p>
-          </div>
-
-          <div className="teamMember">
-            <img src={MaleImage} alt="Márk" />
-            <h3>MÁRK</h3>
-            <p>Barber</p>
-          </div>
-
-          <div className="teamMember">
-            <img src={MaleImage} alt="Balázs" />
-            <h3>BALÁZS</h3>
-            <p>Barber</p>
-          </div>
-
-          <div className="teamMember">
-            <img src={FemaleImage} alt="Kinga" />
-            <h3>KINGA</h3>
-            <p>Lábápoló</p>
-          </div>
-
+          {specialistList.map((specialist) => (
+            <SpecialistsCard
+              key={specialist.id}
+              id={specialist.id}
+              name={specialist.name}
+              title={specialist.title}
+            />
+          ))}
         </div>
 
         <NavLink to="/szakembereink" className="homeButton">

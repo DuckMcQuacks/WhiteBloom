@@ -254,6 +254,23 @@
   margin: 0 auto 30px;
 }
 
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.teamMember:link,
+.teamMember:visited,
+.teamMember:hover,
+.teamMember:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 .teamMember img {
   width: 100px;
   height: 100px;
