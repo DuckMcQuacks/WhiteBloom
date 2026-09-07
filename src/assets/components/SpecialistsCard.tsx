@@ -23,7 +23,7 @@ type SpecialistsCardProps = {
 };
 
 
-export default function SpecialistsCard({ id, name, title, image }: SpecialistsCardProps) {
+export default function SpecialistsCard({ name, title, image }: SpecialistsCardProps) {
   return (
     <NavLink to={`/szakember/${toSlug(name)}`} className="teamMember">
       <img src={specialistImages[image.replace(/\.[^.]+$/, "")]} alt={name} />
