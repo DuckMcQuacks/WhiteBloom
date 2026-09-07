@@ -1,19 +1,32 @@
 
 import { NavLink } from "react-router-dom";
-import FemaleImage from "../images/FemaleImage.jpg";
+import toSlug from "../helperFunctions/toSlug";
+
+const imageFiles = import.meta.glob("../images/*.{jpg,jpeg,png,webp}", {
+  eager: true,
+  import: "default",
+  query: "?url",
+}) as Record<string, string>;
+
+const specialistImages = Object.fromEntries(
+  Object.entries(imageFiles).map(([path, url]) => [
+    path.split("/").pop()?.replace(/\.[^.]+$/, ""),
+    url,
+  ]),
+) as Record<string, string>;
 
 type SpecialistsCardProps = {
   id: number;
   name: string;
   title: string;
+  image: string;
 };
 
 
-export default function SpecialistsCard({ id, name, title }: SpecialistsCardProps) {
-
+export default function SpecialistsCard({ id, name, title, image }: SpecialistsCardProps) {
   return (
-    <NavLink to="/szakembereink" className="teamMember" state={{ specialistId: id }}>
-      <img src={FemaleImage} alt={name} />
+    <NavLink to={`/szakember/${toSlug(name)}`} className="teamMember">
+      <img src={specialistImages[image.replace(/\.[^.]+$/, "")]} alt={name} />
       <h3>{name}</h3>
       <p>{title}</p>
     </NavLink>

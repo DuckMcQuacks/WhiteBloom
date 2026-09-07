@@ -2,6 +2,7 @@
     {
         "id" : 1,
         "name": "Jane Doe",
+        "image": "FemaleImage",
         "title": "Senior Stylist",
         "instagram": "https://www.instagram.com/janedoe",
         "facebook": "https://www.facebook.com/janedoe",
@@ -16,6 +17,7 @@
         "id" : 2,
         "name": "John Smith",
         "title": "Barber",
+        "image": "MaleImage",
         "instagram": "https://www.instagram.com/johnsmith",
         "facebook": "https://www.facebook.com/johnsmith",
         "email": "johnsmith@example.com",
@@ -29,6 +31,7 @@
         "id" : 3,
         "name": "Jane Doe2",
         "title": "FootCare Specialist",
+        "image": "FemaleImage",
         "instagram": "https://www.instagram.com/janedoe",
         "facebook": "https://www.facebook.com/janedoe",
         "email": "janedoe@example.com",

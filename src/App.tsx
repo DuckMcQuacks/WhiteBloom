@@ -8,6 +8,7 @@ import About from "./assets/pages/About"
 import Contact from "./assets/pages/Contact"
 import Appointment from "./assets/pages/Appointment"
 import Professionals from "./assets/pages/Professionals"
+import DetailedProfessional from "./assets/pages/DetailedProfessional"
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/kapcsolat" element={<Contact />} />
           <Route path="/idopontfoglalas" element={<Appointment />} />
           <Route path="/szakembereink" element={<Professionals />} />
+          <Route path="/szakember/:professionalRef" element={<DetailedProfessional />} />
         </Route>
       </Routes>
     </BrowserRouter>

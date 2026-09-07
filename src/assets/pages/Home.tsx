@@ -11,7 +11,8 @@ import "../Styles/home.css"
 const specialistList = professionals.map((person: any) => ({
   id: person.id,
   name: person.name,
-  title: person.Title ?? person.title ?? "Professional",
+  title: person.title ?? "Professional",
+  image: person.image
 }));
 
 export default function Home() {
@@ -128,6 +129,7 @@ export default function Home() {
               id={specialist.id}
               name={specialist.name}
               title={specialist.title}
+              image={specialist.image}
             />
           ))}
         </div>

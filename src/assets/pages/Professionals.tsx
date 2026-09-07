@@ -13,6 +13,7 @@ export default function Professionals() {
             id={person.id}
             name={person.name}
             title={person.Title ?? person.title ?? "Professional"}
+            image={person.image}
           />
         ))}
       </div>
